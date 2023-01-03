@@ -1,0 +1,31 @@
+body {
+font-weight: bold;
+text-align: center;
+}
+
+h1{
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+button{
+    border: rgb(4, 231, 144);
+    color: white ;
+    background: rgb(61, 2, 155);
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#increment-btn{
+    background: rgb(151, 55, 10);
+}
