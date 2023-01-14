@@ -1,17 +1,14 @@
 let myLead = [];
-
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 const tabBtn = document.getElementById("tab-btn");
 const deleteBtn = document.getElementById("delete-btn");
-// localStorage.setItem("myLeads", "www.google.com");
 
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 
 if (leadsFromLocalStorage) {
   myLead = leadsFromLocalStorage;
-  console.log(localStorage.getItem("myLeads"));
   render(myLead);
 }
 
@@ -47,10 +44,8 @@ tabBtn.addEventListener("click", function () {
 });
 
 deleteBtn.addEventListener("dblclick", function () {
-  console.log("double click");
   localStorage.clear();
   myLead = [];
   render(myLead);
 });
-
 render();
